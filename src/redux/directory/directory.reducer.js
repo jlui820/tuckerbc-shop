@@ -1,19 +1,19 @@
 const INITIAL_STATE = {
    sections: [{
        title: 'hats',
-       imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+       imageUrl: 'https://i.ibb.co/gt8Z5FF/warriors-Hat.jpg',
        id: 1,
        linkUrl: 'shop/hats'
      },
      {
        title: 'jackets',
-       imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+       imageUrl: 'https://i.ibb.co/88yjswL/warriors-Jacket.jpg',
        id: 2,
        linkUrl: 'shop/jackets'
      },
      {
        title: 'sneakers',
-       imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+       imageUrl: 'https://i.ibb.co/X59QTvH/kobes.jpg',
        id: 3,
        linkUrl: 'shop/sneakers'
      },
