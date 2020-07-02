@@ -20,6 +20,18 @@ const Header = ({ currentUser, hidden }) => (
       {/* <Logo className='logo' /> */}
       <img src={logo}  className='logo' alt=""/>
     </Link>
+    <div className="icons-container">
+      <div className="icons">
+        <a href="https://github.com/jlui820/tuckerbc-shop">
+          <i class="devicon-github-plain"></i>
+        </a>
+      </div>
+      <div className="icons">
+        <a href="https://www.linkedin.com/in/jeffrey-lui820/">
+          <i class="devicon-linkedin-plain "></i>
+        </a>
+      </div>
+    </div>
     <div className='options'>
       <Link className='option' to='/shop'>
         SHOP

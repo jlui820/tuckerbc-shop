@@ -28,4 +28,18 @@
       cursor: pointer;
     }
   }
+
+  .icons-container {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+  }
+
+  .icons {
+    margin: 30px;
+  }
+
+  i {
+    color: grey;
+  }
 }
