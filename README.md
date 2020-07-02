@@ -19,11 +19,10 @@ Tucker's is an E-commerce website
 ## Features 
 
 ### User Authentication
+![](screenshots/googleLogin.png)
   * Integrate Firebase for secure user authentication management
   * User can use Google Login for account login / logout
   
-![](screenshots/googleLogin.png)
-
 
 ### Cart
 
