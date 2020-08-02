@@ -14,45 +14,48 @@ import logo from '../../assets/Tuckers.png'
 
 import './header.styles.scss';
 
+
+import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink, OptionDiv, Icons, IconsContainer } from './header.styles';
+
 const Header = ({ currentUser, hidden }) => (
-  <div className='header'>
-    <Link className='logo-container' to='/'>
+  <HeaderContainer>
+    <LogoContainer to='/'>
       {/* <Logo className='logo' /> */}
       <img src={logo}  className='logo' alt=""/>
-    </Link>
-    <div className="icons-container">
-      <div className="icons">
+    </LogoContainer>
+    <IconsContainer>
+      <Icons>
         <a href="https://github.com/jlui820/tuckerbc-shop">
           <i class="devicon-github-plain"></i>
         </a>
-      </div>
-      <div className="icons">
+      </Icons>
+      <icon>
         <a href="https://www.linkedin.com/in/jeffrey-lui820/">
           <i class="devicon-linkedin-plain "></i>
         </a>
-      </div>
-    </div>
-    <div className='options'>
-      <Link className='option' to='/shop'>
+      </icon>
+    </IconsContainer>
+    <OptionsContainer>
+      <OptionLink to='/shop'>
         SHOP
-      </Link>
-      <Link className='option' to='/shop'>
+      </OptionLink>
+      <OptionLink to='/shop'>
         CONTACT
-      </Link>
+      </OptionLink>
       {currentUser ? (
-        <div className='option' onClick={() => auth.signOut()}>
+        <OptionDiv className='option' onClick={() => auth.signOut()}>
           SIGN OUT
-        </div>
+        </OptionDiv>
       ) : (
-        <Link className='option' to='/signin'>
+        <OptionLink to='/signin'>
           SIGN IN
-        </Link>
+        </OptionLink>
       )}
       <CartIcon />
-    </div>
+    </OptionsContainer>
     {hidden ? null : <CartDropdown />
     }
-  </div>
+  </HeaderContainer>
 )
 
 const mapStateToProps = createStructuredSelector ({
